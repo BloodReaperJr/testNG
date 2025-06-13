@@ -3,7 +3,7 @@ import org.testng.annotations.Test;
 public class FirstTestCase {
     @Test(priority = 1)
     public void setup(){
-        System.out.println("Opening Browser");
+        System.out.println("First: Opening Browser");
     }
 
     @Test(priority = 2)
@@ -13,6 +13,6 @@ public class FirstTestCase {
 
     @Test(priority = 3)
     public void teardown(){
-        System.out.println("Closing Browser");
+        System.out.println("First: Closing Browser");
     }
 }
