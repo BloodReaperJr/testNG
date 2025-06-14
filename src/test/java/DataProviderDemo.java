@@ -6,13 +6,9 @@ import org.testng.annotations.Test;
 
 public class DataProviderDemo {
 
-    @DataProvider(name = "LoginData")
-    public Object[][] getData(){
-        Object[][] data = { {"shubham","rahulshettyacademy"},{"Yash","rahulshettyacademy"},{"Anay","rahulshettyacademy"}};
-        return data;
-    }
 
-    @Test(dataProvider="LoginData")
+
+    @Test(dataProvider="LoginData",dataProviderClass = CustomDataProvider.class)
     public void LoginTest(String username,String password){
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
