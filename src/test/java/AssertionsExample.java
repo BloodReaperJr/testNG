@@ -17,7 +17,7 @@ public class AssertionsExample {
 
     @Test
     void logo(){
-        WebElement logo = driver.findElement(By.cssSelector("img[alt='company-branding']"));
+        WebElement logo = driver.findElement(By.xpath("//*[@id=\"divLogo\"]/img"));
         Assert.assertTrue(logo.isDisplayed(),"Logo isn't displayed");
     }
 
