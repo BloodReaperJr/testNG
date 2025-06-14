@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test name="Assertionsdemo">
+    <test name="ParametersDemo1">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="https://rahulshettyacademy.com/dropdownsPractise/"/>
         <classes>
-            <class name="AssertionsExample">
-
-            </class>
+            <class name="ParametersExample"/>
+        </classes>
+    </test>
+    <test name="ParametersDemo2">
+        <parameter name="browser" value="edge"/>
+        <parameter name="url" value="https://rahulshettyacademy.com/dropdownsPractise/"/>
+        <classes>
+            <class name="ParametersExample"/>
         </classes>
     </test>
 </suite>
